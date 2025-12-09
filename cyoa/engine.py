@@ -211,7 +211,11 @@ class GameEngine:
         for scenario in exercise.scenarios:
             if not self.running:
                 break
-            self.run_scenario(exercise, scenario)
+            completed = self.run_scenario(exercise, scenario)
+            if not completed:
+                # User quit mid-exercise, return to menu
+                self.current_exercise = None
+                return
 
         # Mark exercise complete if all scenarios done
         ex_progress = self.progress.get_exercise_progress(exercise.id)
@@ -237,8 +241,8 @@ class GameEngine:
 
         self.current_exercise = None
 
-    def run_scenario(self, exercise: Exercise, scenario: Scenario):
-        """Run through a scenario."""
+    def run_scenario(self, exercise: Exercise, scenario: Scenario) -> bool:
+        """Run through a scenario. Returns False if user quit mid-scenario."""
         self.current_scenario = scenario
 
         # Check if already completed
@@ -255,30 +259,26 @@ class GameEngine:
 
             choice = ui.get_input("> ", ["R", "S", "B"])
             if choice == "S":
-                return
+                return True
             elif choice == "B":
                 self.current_scenario = None
-                return
-
-        # Show scenario description
-        ui.clear_screen()
-        ui.print_header(f"EXERCISE {exercise.number}: {exercise.title.upper()}")
-        ui.print_scenario_title(scenario.title)
-
-        print(ui.wrap_text(scenario.description))
-        print()
-        ui.print_divider()
+                return False
 
         # Run each question
         for i, question in enumerate(scenario.questions, 1):
             if not self.running:
                 break
-            self.run_question(exercise, scenario, question, i)
+            completed = self.run_question(exercise, scenario, question, i)
+            if not completed:
+                # User quit mid-scenario
+                self.current_scenario = None
+                return False
 
         # Mark scenario complete
         self.progress.mark_scenario_complete(exercise.id, scenario.id)
 
         self.current_scenario = None
+        return True
 
     def run_question(
         self,
@@ -286,9 +286,19 @@ class GameEngine:
         scenario: Scenario,
         question: Question,
         number: int
-    ):
-        """Run a single question."""
+    ) -> bool:
+        """Run a single question. Returns False if user quit."""
+        # Clear screen and reprint scenario context for each question
+        ui.clear_screen()
+        ui.print_header(f"EXERCISE {exercise.number}: {exercise.title.upper()}")
+        ui.print_scenario_title(scenario.title)
+        print(ui.wrap_text(scenario.description))
+        print()
+        ui.print_divider()
+
         ui.print_question(number, question.text)
+        print(f"{ui.Colors.DIM}(Enter Q to quit to menu){ui.Colors.RESET}")
+        print()
 
         # Get answer based on question type
         if isinstance(question, MultipleChoiceQuestion):
@@ -302,6 +312,10 @@ class GameEngine:
         else:
             # Default to text input
             answer = ui.get_text_input("Your answer:", min_length=5)
+
+        # Check if user quit
+        if answer == "Q":
+            return False
 
         # Evaluate answer
         is_correct, score, feedback = evaluate_answer(question, answer)
@@ -320,12 +334,13 @@ class GameEngine:
         )
 
         ui.wait_for_enter()
+        return True
 
     def get_multiple_choice_answer(self, question: MultipleChoiceQuestion) -> str:
-        """Get answer for multiple choice question."""
+        """Get answer for multiple choice question. Returns 'Q' if user quit."""
         ui.print_options(question.options)
 
-        valid_keys = [opt[0].upper() for opt in question.options]
+        valid_keys = [opt[0].upper() for opt in question.options] + ["Q"]
         return ui.get_input("Your answer: ", valid_keys)
 
     def get_ranking_answer(self, question: RankingQuestion) -> List[int]:
@@ -340,8 +355,8 @@ class GameEngine:
 
         return ui.get_text_input("Your answer:", min_length=20)
 
-    def get_checklist_answer(self, question: ChecklistQuestion) -> List[str]:
-        """Get answer for checklist question."""
+    def get_checklist_answer(self, question: ChecklistQuestion):
+        """Get answer for checklist question. Returns 'Q' if user quit."""
         print(f"{ui.Colors.DIM}(Enter letters separated by commas, e.g., A,B,D){ui.Colors.RESET}")
         print()
 
@@ -351,11 +366,16 @@ class GameEngine:
 
         while True:
             response = ui.get_input("Your selections: ")
+
+            # Check for quit
+            if response.strip().upper() == "Q":
+                return "Q"
+
             # Parse comma-separated values
             selections = [s.strip().upper() for s in response.split(",") if s.strip()]
 
             valid_keys = [opt[0].upper() for opt in question.options]
-            if all(s in valid_keys for s in selections):
+            if all(s in valid_keys for s in selections) and selections:
                 return selections
 
             print(f"{ui.Colors.YELLOW}Please enter valid options separated by commas.{ui.Colors.RESET}")

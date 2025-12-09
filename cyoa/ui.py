@@ -298,7 +298,7 @@ def get_input(prompt: str = "> ", valid_options: Optional[List[str]] = None) -> 
             return "Q"
 
 
-def get_text_input(prompt: str, min_length: int = 10) -> str:
+def get_text_input(prompt: str, min_length: int = 10):
     """
     Get multi-line text input from user.
 
@@ -307,7 +307,7 @@ def get_text_input(prompt: str, min_length: int = 10) -> str:
         min_length: Minimum character length required
 
     Returns:
-        The user's response
+        The user's response, or "Q" if user quit
     """
     print(f"{Colors.DIM}(Enter your response. Type 'DONE' on a new line when finished){Colors.RESET}")
     print(f"{Colors.DIM}(Minimum {min_length} characters required){Colors.RESET}")
@@ -319,12 +319,15 @@ def get_text_input(prompt: str, min_length: int = 10) -> str:
             line = input()
             if line.strip().upper() == "DONE":
                 break
+            if line.strip().upper() == "Q" and not lines:
+                # Only allow Q to quit if it's the first input
+                return "Q"
             lines.append(line)
         except EOFError:
             break
         except KeyboardInterrupt:
             print()
-            break
+            return "Q"
 
     response = '\n'.join(lines).strip()
 
@@ -335,7 +338,7 @@ def get_text_input(prompt: str, min_length: int = 10) -> str:
     return response
 
 
-def get_ranking_input(items: List[str], ranks: int = 3) -> List[int]:
+def get_ranking_input(items: List[str], ranks: int = 3):
     """
     Get ranking input from user.
 
@@ -344,7 +347,7 @@ def get_ranking_input(items: List[str], ranks: int = 3) -> List[int]:
         ranks: Number of ranks (e.g., 3 for 1st, 2nd, 3rd)
 
     Returns:
-        List of indices representing the ranking
+        List of indices representing the ranking, or "Q" if user quit
     """
     print(f"{Colors.DIM}(Enter the number of your choice for each rank){Colors.RESET}")
     print()
@@ -361,6 +364,10 @@ def get_ranking_input(items: List[str], ranks: int = 3) -> List[int]:
                 ordinal = {1: "1st", 2: "2nd", 3: "3rd"}.get(rank, f"{rank}th")
                 choice = input(f"{Colors.BRIGHT_WHITE}{ordinal} place: {Colors.RESET}").strip()
 
+                # Check for quit
+                if choice.upper() == "Q":
+                    return "Q"
+
                 if choice.isdigit():
                     idx = int(choice)
                     if 1 <= idx <= len(items) and idx not in ranking:
@@ -374,7 +381,7 @@ def get_ranking_input(items: List[str], ranks: int = 3) -> List[int]:
                     print(f"{Colors.YELLOW}Please enter a number.{Colors.RESET}")
             except (EOFError, KeyboardInterrupt):
                 print()
-                return list(range(1, ranks + 1))  # Return default on interrupt
+                return "Q"  # Treat interrupt as quit
 
     return ranking
 
