@@ -1,0 +1,905 @@
+{
+  "session_id": "20251209_132925",
+  "created": "2025-12-09T13:29:25.545855",
+  "last_updated": "2025-12-09T14:07:34.721245",
+  "exercises": {
+    "exercise1": {
+      "exercise_id": "exercise1",
+      "started": true,
+      "completed": true,
+      "scenarios": {
+        "1a": {
+          "scenario_id": "1a",
+          "started": true,
+          "completed": true,
+          "questions": {
+            "1a_q1": {
+              "question_id": "1a_q1",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": "C",
+              "timestamp": "2025-12-09T13:29:35.982685"
+            },
+            "1a_q2": {
+              "question_id": "1a_q2",
+              "answered": true,
+              "correct": false,
+              "score": 2.25,
+              "attempts": 1,
+              "user_answer": [
+                "A",
+                "B",
+                "D"
+              ],
+              "timestamp": "2025-12-09T13:30:18.205006"
+            },
+            "1a_q3": {
+              "question_id": "1a_q3",
+              "answered": true,
+              "correct": true,
+              "score": 3,
+              "attempts": 1,
+              "user_answer": [
+                "B",
+                "C",
+                "E",
+                "A"
+              ],
+              "timestamp": "2025-12-09T13:32:52.023654"
+            },
+            "1a_q4": {
+              "question_id": "1a_q4",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": "B",
+              "timestamp": "2025-12-09T13:33:06.856599"
+            }
+          }
+        },
+        "1b": {
+          "scenario_id": "1b",
+          "started": true,
+          "completed": true,
+          "questions": {
+            "1b_q1": {
+              "question_id": "1b_q1",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": "A",
+              "timestamp": "2025-12-09T13:36:43.161164"
+            },
+            "1b_q2": {
+              "question_id": "1b_q2",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": [
+                3,
+                2,
+                1
+              ],
+              "timestamp": "2025-12-09T13:36:59.685465"
+            },
+            "1b_q3": {
+              "question_id": "1b_q3",
+              "answered": true,
+              "correct": true,
+              "score": 3,
+              "attempts": 1,
+              "user_answer": "B",
+              "timestamp": "2025-12-09T13:37:27.931865"
+            }
+          }
+        },
+        "1c": {
+          "scenario_id": "1c",
+          "started": true,
+          "completed": true,
+          "questions": {
+            "1c_q1": {
+              "question_id": "1c_q1",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": [
+                3,
+                2,
+                1
+              ],
+              "timestamp": "2025-12-09T13:38:14.498822"
+            },
+            "1c_q2": {
+              "question_id": "1c_q2",
+              "answered": true,
+              "correct": false,
+              "score": 2.25,
+              "attempts": 1,
+              "user_answer": [
+                "A",
+                "B",
+                "C"
+              ],
+              "timestamp": "2025-12-09T13:38:36.027774"
+            },
+            "1c_q3": {
+              "question_id": "1c_q3",
+              "answered": true,
+              "correct": false,
+              "score": 2.0,
+              "attempts": 1,
+              "user_answer": [
+                "A",
+                "B"
+              ],
+              "timestamp": "2025-12-09T13:39:31.481068"
+            }
+          }
+        }
+      }
+    },
+    "exercise2": {
+      "exercise_id": "exercise2",
+      "started": true,
+      "completed": true,
+      "scenarios": {
+        "2a": {
+          "scenario_id": "2a",
+          "started": true,
+          "completed": true,
+          "questions": {
+            "2a_q1": {
+              "question_id": "2a_q1",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": "B",
+              "timestamp": "2025-12-09T13:41:36.944860"
+            },
+            "2a_q2": {
+              "question_id": "2a_q2",
+              "answered": true,
+              "correct": true,
+              "score": 3,
+              "attempts": 1,
+              "user_answer": [
+                "A",
+                "B",
+                "D",
+                "F"
+              ],
+              "timestamp": "2025-12-09T13:42:00.656450"
+            },
+            "2a_q3": {
+              "question_id": "2a_q3",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": "C",
+              "timestamp": "2025-12-09T13:42:11.026088"
+            },
+            "2a_q4": {
+              "question_id": "2a_q4",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": "B",
+              "timestamp": "2025-12-09T13:42:21.897374"
+            }
+          }
+        },
+        "2b": {
+          "scenario_id": "2b",
+          "started": true,
+          "completed": true,
+          "questions": {
+            "2b_q1": {
+              "question_id": "2b_q1",
+              "answered": true,
+              "correct": true,
+              "score": 3,
+              "attempts": 1,
+              "user_answer": [
+                "A",
+                "C",
+                "D",
+                "F"
+              ],
+              "timestamp": "2025-12-09T13:42:54.290324"
+            },
+            "2b_q2": {
+              "question_id": "2b_q2",
+              "answered": true,
+              "correct": false,
+              "score": 2.25,
+              "attempts": 1,
+              "user_answer": [
+                "A",
+                "C",
+                "F"
+              ],
+              "timestamp": "2025-12-09T13:43:12.850467"
+            },
+            "2b_q3": {
+              "question_id": "2b_q3",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": [
+                3,
+                2,
+                1
+              ],
+              "timestamp": "2025-12-09T13:43:37.446583"
+            },
+            "2b_q4": {
+              "question_id": "2b_q4",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": "B",
+              "timestamp": "2025-12-09T13:43:46.794081"
+            }
+          }
+        },
+        "2c": {
+          "scenario_id": "2c",
+          "started": true,
+          "completed": true,
+          "questions": {
+            "2c_q1": {
+              "question_id": "2c_q1",
+              "answered": true,
+              "correct": false,
+              "score": 2.4000000000000004,
+              "attempts": 1,
+              "user_answer": [
+                "A",
+                "E",
+                "F",
+                "D"
+              ],
+              "timestamp": "2025-12-09T13:44:27.823881"
+            },
+            "2c_q2": {
+              "question_id": "2c_q2",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": "B",
+              "timestamp": "2025-12-09T13:44:44.299421"
+            },
+            "2c_q3": {
+              "question_id": "2c_q3",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": "A",
+              "timestamp": "2025-12-09T13:44:53.445462"
+            }
+          }
+        }
+      }
+    },
+    "exercise3": {
+      "exercise_id": "exercise3",
+      "started": true,
+      "completed": true,
+      "scenarios": {
+        "3a": {
+          "scenario_id": "3a",
+          "started": true,
+          "completed": true,
+          "questions": {
+            "3a_q1": {
+              "question_id": "3a_q1",
+              "answered": true,
+              "correct": true,
+              "score": 3,
+              "attempts": 1,
+              "user_answer": [
+                "A",
+                "B",
+                "D",
+                "F",
+                "G"
+              ],
+              "timestamp": "2025-12-09T13:46:23.365878"
+            },
+            "3a_q2": {
+              "question_id": "3a_q2",
+              "answered": true,
+              "correct": false,
+              "score": 0.6666666666666666,
+              "attempts": 1,
+              "user_answer": [
+                1,
+                3,
+                2
+              ],
+              "timestamp": "2025-12-09T13:46:45.024400"
+            }
+          }
+        },
+        "3b": {
+          "scenario_id": "3b",
+          "started": true,
+          "completed": true,
+          "questions": {
+            "3b_q1": {
+              "question_id": "3b_q1",
+              "answered": true,
+              "correct": false,
+              "score": 1.3333333333333333,
+              "attempts": 1,
+              "user_answer": [
+                "A",
+                "B",
+                "D",
+                "C"
+              ],
+              "timestamp": "2025-12-09T13:47:15.713226"
+            },
+            "3b_q2": {
+              "question_id": "3b_q2",
+              "answered": true,
+              "correct": false,
+              "score": 1.3333333333333333,
+              "attempts": 1,
+              "user_answer": [
+                "A",
+                "C",
+                "D",
+                "F"
+              ],
+              "timestamp": "2025-12-09T13:48:16.644682"
+            }
+          }
+        },
+        "3c": {
+          "scenario_id": "3c",
+          "started": true,
+          "completed": true,
+          "questions": {
+            "3c_q1": {
+              "question_id": "3c_q1",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": "B",
+              "timestamp": "2025-12-09T13:48:44.163642"
+            },
+            "3c_q2": {
+              "question_id": "3c_q2",
+              "answered": true,
+              "correct": true,
+              "score": 3,
+              "attempts": 1,
+              "user_answer": "C",
+              "timestamp": "2025-12-09T13:48:53.292850"
+            },
+            "3c_q3": {
+              "question_id": "3c_q3",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": "C",
+              "timestamp": "2025-12-09T13:49:03.316283"
+            },
+            "3c_q4": {
+              "question_id": "3c_q4",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": "B",
+              "timestamp": "2025-12-09T13:49:18.047278"
+            }
+          }
+        },
+        "3d": {
+          "scenario_id": "3d",
+          "started": true,
+          "completed": true,
+          "questions": {
+            "3d_q1": {
+              "question_id": "3d_q1",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": "B",
+              "timestamp": "2025-12-09T13:49:53.148107"
+            },
+            "3d_q2": {
+              "question_id": "3d_q2",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": "B",
+              "timestamp": "2025-12-09T13:50:05.087588"
+            },
+            "3d_q3": {
+              "question_id": "3d_q3",
+              "answered": true,
+              "correct": false,
+              "score": 2.4000000000000004,
+              "attempts": 1,
+              "user_answer": [
+                "A",
+                "D",
+                "E",
+                "F"
+              ],
+              "timestamp": "2025-12-09T13:50:42.534948"
+            }
+          }
+        },
+        "3e": {
+          "scenario_id": "3e",
+          "started": true,
+          "completed": true,
+          "questions": {
+            "3e_q1": {
+              "question_id": "3e_q1",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": [
+                1,
+                2,
+                3
+              ],
+              "timestamp": "2025-12-09T13:51:04.288526"
+            },
+            "3e_q2": {
+              "question_id": "3e_q2",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": "A",
+              "timestamp": "2025-12-09T13:51:11.438717"
+            }
+          }
+        }
+      }
+    },
+    "exercise4": {
+      "exercise_id": "exercise4",
+      "started": true,
+      "completed": true,
+      "scenarios": {
+        "4a": {
+          "scenario_id": "4a",
+          "started": true,
+          "completed": true,
+          "questions": {
+            "4a_q1": {
+              "question_id": "4a_q1",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "timestamp": "2025-12-09T13:55:59.841086"
+            },
+            "4a_q2": {
+              "question_id": "4a_q2",
+              "answered": true,
+              "correct": false,
+              "score": 1.5,
+              "attempts": 1,
+              "user_answer": [
+                "A",
+                "C",
+                "D"
+              ],
+              "timestamp": "2025-12-09T13:56:30.032491"
+            },
+            "4a_q3": {
+              "question_id": "4a_q3",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": "C",
+              "timestamp": "2025-12-09T13:56:48.018885"
+            },
+            "4a_q4": {
+              "question_id": "4a_q4",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "timestamp": "2025-12-09T13:57:04.079753"
+            }
+          }
+        },
+        "4b": {
+          "scenario_id": "4b",
+          "started": true,
+          "completed": true,
+          "questions": {
+            "4b_q1": {
+              "question_id": "4b_q1",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": "B",
+              "timestamp": "2025-12-09T13:57:17.359933"
+            },
+            "4b_q2": {
+              "question_id": "4b_q2",
+              "answered": true,
+              "correct": false,
+              "score": 1.6,
+              "attempts": 1,
+              "user_answer": [
+                "B",
+                "D",
+                "E",
+                "F"
+              ],
+              "timestamp": "2025-12-09T13:58:30.586079"
+            },
+            "4b_q3": {
+              "question_id": "4b_q3",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": "B",
+              "timestamp": "2025-12-09T13:58:45.223733"
+            }
+          }
+        },
+        "4c": {
+          "scenario_id": "4c",
+          "started": true,
+          "completed": true,
+          "questions": {
+            "4c_q1": {
+              "question_id": "4c_q1",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": "C",
+              "timestamp": "2025-12-09T13:59:10.815064"
+            },
+            "4c_q2": {
+              "question_id": "4c_q2",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": "B",
+              "timestamp": "2025-12-09T13:59:23.972475"
+            },
+            "4c_q3": {
+              "question_id": "4c_q3",
+              "answered": true,
+              "correct": false,
+              "score": 0.6666666666666666,
+              "attempts": 1,
+              "user_answer": [
+                "B"
+              ],
+              "timestamp": "2025-12-09T13:59:34.231085"
+            },
+            "4c_q4": {
+              "question_id": "4c_q4",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": "C",
+              "timestamp": "2025-12-09T13:59:54.473441"
+            }
+          }
+        },
+        "4d": {
+          "scenario_id": "4d",
+          "started": true,
+          "completed": true,
+          "questions": {
+            "4d_q1": {
+              "question_id": "4d_q1",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "timestamp": "2025-12-09T14:00:37.028564"
+            },
+            "4d_q2": {
+              "question_id": "4d_q2",
+              "answered": true,
+              "correct": false,
+              "score": 1.5,
+              "attempts": 1,
+              "user_answer": [
+                "A",
+                "D",
+                "C"
+              ],
+              "timestamp": "2025-12-09T14:00:52.869895"
+            },
+            "4d_q3": {
+              "question_id": "4d_q3",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": "B",
+              "timestamp": "2025-12-09T14:01:07.469374"
+            },
+            "4d_q4": {
+              "question_id": "4d_q4",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": "C",
+              "timestamp": "2025-12-09T14:01:16.286371"
+            }
+          }
+        }
+      }
+    },
+    "exercise5": {
+      "exercise_id": "exercise5",
+      "started": true,
+      "completed": true,
+      "scenarios": {
+        "5a": {
+          "scenario_id": "5a",
+          "started": true,
+          "completed": true,
+          "questions": {
+            "5a_q1": {
+              "question_id": "5a_q1",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": "C",
+              "timestamp": "2025-12-09T14:01:56.672645"
+            },
+            "5a_q2": {
+              "question_id": "5a_q2",
+              "answered": true,
+              "correct": false,
+              "score": 0,
+              "attempts": 1,
+              "user_answer": [
+                "A",
+                "C",
+                "F",
+                "G"
+              ],
+              "timestamp": "2025-12-09T14:02:24.185369"
+            },
+            "5a_q3": {
+              "question_id": "5a_q3",
+              "answered": true,
+              "correct": false,
+              "score": 2.25,
+              "attempts": 1,
+              "user_answer": [
+                "A",
+                "D",
+                "F"
+              ],
+              "timestamp": "2025-12-09T14:02:51.429471"
+            }
+          }
+        },
+        "5b": {
+          "scenario_id": "5b",
+          "started": true,
+          "completed": true,
+          "questions": {
+            "5b_q1": {
+              "question_id": "5b_q1",
+              "answered": true,
+              "correct": false,
+              "score": 1.7999999999999998,
+              "attempts": 1,
+              "user_answer": [
+                "A",
+                "C",
+                "D",
+                "F",
+                "G"
+              ],
+              "timestamp": "2025-12-09T14:03:37.291369"
+            },
+            "5b_q2": {
+              "question_id": "5b_q2",
+              "answered": true,
+              "correct": false,
+              "score": 1.3333333333333333,
+              "attempts": 1,
+              "user_answer": [
+                "A",
+                "C",
+                "E",
+                "F"
+              ],
+              "timestamp": "2025-12-09T14:04:03.937067"
+            }
+          }
+        },
+        "5c": {
+          "scenario_id": "5c",
+          "started": true,
+          "completed": true,
+          "questions": {
+            "5c_q1": {
+              "question_id": "5c_q1",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": [
+                1,
+                3,
+                2
+              ],
+              "timestamp": "2025-12-09T14:04:26.363118"
+            },
+            "5c_q2": {
+              "question_id": "5c_q2",
+              "answered": true,
+              "correct": false,
+              "score": 1.3333333333333333,
+              "attempts": 1,
+              "user_answer": [
+                "A",
+                "C",
+                "D",
+                "E"
+              ],
+              "timestamp": "2025-12-09T14:04:45.317672"
+            },
+            "5c_q3": {
+              "question_id": "5c_q3",
+              "answered": true,
+              "correct": false,
+              "score": 2.4000000000000004,
+              "attempts": 1,
+              "user_answer": [
+                "A",
+                "C",
+                "D",
+                "E",
+                "G",
+                "H"
+              ],
+              "timestamp": "2025-12-09T14:05:24.090003"
+            }
+          }
+        },
+        "5d": {
+          "scenario_id": "5d",
+          "started": true,
+          "completed": true,
+          "questions": {
+            "5d_q1": {
+              "question_id": "5d_q1",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": [
+                "A",
+                "C",
+                "D",
+                "F"
+              ],
+              "timestamp": "2025-12-09T14:05:54.847057"
+            },
+            "5d_q2": {
+              "question_id": "5d_q2",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": [
+                "A",
+                "C",
+                "D",
+                "E",
+                "F",
+                "H"
+              ],
+              "timestamp": "2025-12-09T14:06:18.527858"
+            }
+          }
+        },
+        "5e": {
+          "scenario_id": "5e",
+          "started": true,
+          "completed": true,
+          "questions": {
+            "5e_q1": {
+              "question_id": "5e_q1",
+              "answered": true,
+              "correct": true,
+              "score": 2,
+              "attempts": 1,
+              "user_answer": "C",
+              "timestamp": "2025-12-09T14:06:30.393909"
+            },
+            "5e_q2": {
+              "question_id": "5e_q2",
+              "answered": true,
+              "correct": true,
+              "score": 3,
+              "attempts": 1,
+              "user_answer": [
+                "A",
+                "C",
+                "D"
+              ],
+              "timestamp": "2025-12-09T14:06:48.433976"
+            },
+            "5e_q3": {
+              "question_id": "5e_q3",
+              "answered": true,
+              "correct": false,
+              "score": 2.5,
+              "attempts": 1,
+              "user_answer": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "timestamp": "2025-12-09T14:07:25.655258"
+            }
+          }
+        }
+      }
+    }
+  }
+}
